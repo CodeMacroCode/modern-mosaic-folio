@@ -8,35 +8,50 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Modernist Portfolio Color System */
+    --background: 40 8% 96%; /* Muted beige background */
+    --foreground: 25 25% 15%; /* Dark brown text */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 40 8% 96%;
+    --card-foreground: 25 25% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 40 8% 96%;
+    --popover-foreground: 25 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 25 25% 15%; /* Dark brown primary */
+    --primary-foreground: 40 20% 95%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 40 20% 92%; /* Soft cream */
+    --secondary-foreground: 25 25% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 40 15% 88%;
+    --muted-foreground: 25 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent-red: 0 85% 60%; /* Bold red for projects */
+    --accent-red-foreground: 0 0% 100%;
+    
+    --accent-yellow: 38 95% 65%; /* Bright yellow for contact */
+    --accent-yellow-foreground: 25 25% 15%;
+    
+    --accent-cream: 40 25% 94%; /* Cream for about */
+    --accent-cream-foreground: 25 25% 15%;
+
+    --accent: 40 15% 88%;
+    --accent-foreground: 25 25% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 40 15% 85%;
+    --input: 40 15% 85%;
+    --ring: 25 25% 15%;
 
-    --radius: 0.5rem;
+    --radius: 0.25rem;
+    
+    /* Design system tokens */
+    --gradient-subtle: linear-gradient(135deg, hsl(var(--background)), hsl(40 12% 98%));
+    --shadow-elegant: 0 4px 20px -4px hsl(var(--foreground) / 0.08);
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 

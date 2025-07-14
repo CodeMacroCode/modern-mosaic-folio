@@ -42,7 +42,13 @@ export default {
 				},
 				accent: {
 					DEFAULT: 'hsl(var(--accent))',
-					foreground: 'hsl(var(--accent-foreground))'
+					foreground: 'hsl(var(--accent-foreground))',
+					red: 'hsl(var(--accent-red))',
+					'red-foreground': 'hsl(var(--accent-red-foreground))',
+					yellow: 'hsl(var(--accent-yellow))',
+					'yellow-foreground': 'hsl(var(--accent-yellow-foreground))',
+					cream: 'hsl(var(--accent-cream))',
+					'cream-foreground': 'hsl(var(--accent-cream-foreground))'
 				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
@@ -62,6 +68,11 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			fontFamily: {
+				'serif': ['Cormorant Garamond', 'serif'],
+				'sans': ['Inter', 'system-ui', 'sans-serif'],
+				'display': ['Inter', 'system-ui', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
