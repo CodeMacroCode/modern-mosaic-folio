@@ -6,12 +6,14 @@ export default function About() {
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-6 py-12 max-w-4xl">
         {/* Navigation */}
-        <Link 
+        <Link
           to="/"
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors duration-300 mb-12"
         >
           <ArrowLeft className="w-4 h-4" />
-          <span className="font-mono text-sm uppercase tracking-wider">Back to Home</span>
+          <span className="font-mono text-sm uppercase tracking-wider">
+            Back to Home
+          </span>
         </Link>
 
         {/* Main Content */}
@@ -26,24 +28,26 @@ export default function About() {
 
             <div className="prose prose-lg max-w-none">
               <p className="text-foreground/80 leading-relaxed mb-6">
-                I'm a passionate frontend developer with a keen eye for design and 
-                a love for creating beautiful, functional web experiences. Based in 
-                Montreal, I specialize in modern JavaScript frameworks and have a 
-                particular affinity for clean, minimalist aesthetics.
+                Hey there! I'm a frontend developer who’s all about turning
+                ideas into clean, interactive, and engaging web experiences.
+                I’ve got a strong love for modern JavaScript frameworks and a
+                thing for sleek, minimalist UI that doesn’t just work, but it
+                feels good to use.
               </p>
-              
+
               <p className="text-foreground/80 leading-relaxed mb-6">
-                My approach combines technical expertise with creative vision, 
-                ensuring that every project not only functions flawlessly but 
-                also tells a compelling visual story. I believe great web 
-                development is where art meets code.
+                I like to think of frontend development as the sweet spot where
+                logic meets creativity. Whether it's building responsive
+                layouts, crafting smooth animations, or bringing UX designs to
+                life pixel by pixel, I’m all in.
               </p>
 
               <p className="text-foreground/80 leading-relaxed">
-                When I'm not coding, you can find me exploring Montreal's design 
-                scene, experimenting with new technologies, or working on 
-                personal creative projects that push the boundaries of what's 
-                possible on the web.
+                Beyond the screen, I’m usually geeking out over new tech trends,
+                fine-tuning side projects, or just soaking in inspiration from
+                everyday design. I’m constantly learning, iterating, and finding
+                better ways to build, because the web doesn’t slow down, and
+                neither do I.
               </p>
             </div>
           </div>
@@ -51,7 +55,9 @@ export default function About() {
           <div className="space-y-8">
             {/* Skills */}
             <div className="bg-accent-cream/50 p-8 rounded-sm">
-              <h3 className="text-xl font-display font-medium mb-6">Technical Skills</h3>
+              <h3 className="text-xl font-display font-medium mb-6">
+                Technical Skills
+              </h3>
               <div className="grid grid-cols-2 gap-4 text-sm">
                 <div>
                   <h4 className="font-medium mb-2 text-foreground">Frontend</h4>
@@ -76,11 +82,15 @@ export default function About() {
 
             {/* Availability */}
             <div className="border border-border p-8 rounded-sm">
-              <h3 className="text-xl font-display font-medium mb-4">Availability</h3>
+              <h3 className="text-xl font-display font-medium mb-4">
+                Availability
+              </h3>
               <div className="space-y-3 text-sm">
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Status</span>
-                  <span className="font-medium text-accent-red">Available for Projects</span>
+                  <span className="font-medium text-accent-red">
+                    Available for Projects
+                  </span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Response Time</span>
@@ -88,7 +98,7 @@ export default function About() {
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Location</span>
-                  <span className="font-medium">Montreal, QC</span>
+                  <span className="font-medium">Nagpur, IN</span>
                 </div>
               </div>
             </div>

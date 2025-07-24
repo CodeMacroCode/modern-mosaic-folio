@@ -10,27 +10,30 @@ export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    message: ""
+    message: "",
   });
   const { toast } = useToast();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Simulate form submission
     toast({
       title: "Message sent!",
-      description: "Thank you for reaching out. I'll get back to you within 24 hours.",
+      description:
+        "Thank you for reaching out. I'll get back to you within 24 hours.",
     });
-    
+
     // Reset form
     setFormData({ name: "", email: "", message: "" });
   };
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData(prev => ({
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setFormData((prev) => ({
       ...prev,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     }));
   };
 
@@ -38,12 +41,14 @@ export default function Contact() {
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-6 py-12 max-w-4xl">
         {/* Navigation */}
-        <Link 
+        <Link
           to="/"
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors duration-300 mb-12"
         >
           <ArrowLeft className="w-4 h-4" />
-          <span className="font-mono text-sm uppercase tracking-wider">Back to Home</span>
+          <span className="font-mono text-sm uppercase tracking-wider">
+            Back to Home
+          </span>
         </Link>
 
         {/* Header */}
@@ -53,8 +58,9 @@ export default function Contact() {
           </h1>
           <div className="w-24 h-0.5 bg-accent-yellow mb-6"></div>
           <p className="text-lg text-muted-foreground max-w-2xl">
-            I'm always excited to discuss new projects and creative opportunities. 
-            Drop me a line and let's create something amazing together.
+            I'm always excited to discuss new projects and creative
+            opportunities. Drop me a line and let's create something amazing
+            together.
           </p>
         </div>
 
@@ -64,7 +70,10 @@ export default function Contact() {
           <div>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-2">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium mb-2"
+                >
                   Name
                 </label>
                 <Input
@@ -80,7 +89,10 @@ export default function Contact() {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-2">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium mb-2"
+                >
                   Email
                 </label>
                 <Input
@@ -96,7 +108,10 @@ export default function Contact() {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium mb-2"
+                >
                   Message
                 </label>
                 <Textarea
@@ -129,7 +144,9 @@ export default function Contact() {
                   <Mail className="w-5 h-5 text-accent-red" />
                   <h3 className="font-medium">Email</h3>
                 </div>
-                <p className="text-muted-foreground">hello@developer.com</p>
+                <p className="text-muted-foreground">
+                  piyushharde100@gmail.com
+                </p>
               </div>
 
               <div className="bg-accent-cream p-6 rounded-sm">
@@ -137,7 +154,7 @@ export default function Contact() {
                   <MapPin className="w-5 h-5 text-accent-red" />
                   <h3 className="font-medium">Location</h3>
                 </div>
-                <p className="text-muted-foreground">Montreal, Quebec, Canada</p>
+                <p className="text-muted-foreground">Nagpur, IN</p>
               </div>
 
               <div className="bg-accent-cream p-6 rounded-sm">
@@ -163,7 +180,7 @@ export default function Contact() {
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Timezone</span>
-                  <span>Eastern Standard Time</span>
+                  <span>Indian Standard Time</span>
                 </div>
               </div>
             </div>

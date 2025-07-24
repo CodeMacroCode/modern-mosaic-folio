@@ -9,12 +9,12 @@ export default function Home() {
         <header className="flex flex-col md:flex-row md:justify-between md:items-start mb-12 md:mb-16">
           <div className="mb-8 md:mb-0">
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif leading-none">
-              <span className="block">Alexandre</span>
+              <span className="block">Piyush</span>
             </h1>
           </div>
           <div className="text-right">
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif italic leading-none">
-              <span className="block">Dubois</span>
+              <span className="block">Harde</span>
             </h1>
           </div>
         </header>
@@ -28,7 +28,7 @@ export default function Home() {
             Available for Freelance
           </span>
           <span className="font-mono text-xs uppercase tracking-wider text-muted-foreground">
-            hello@alexandredubois.dev
+            piyushharde100@gmail.com
           </span>
           <TimeDisplay />
         </div>
@@ -39,29 +39,24 @@ export default function Home() {
           <div className="space-y-8 lg:space-y-12">
             <div>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-light leading-tight mb-4">
-                French
-              </h2>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-light leading-tight mb-4">
                 Frontend
               </h2>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-light leading-tight">
                 Developer
               </h2>
             </div>
-            
+
             <div className="space-y-4">
               <div className="w-20 h-0.5 bg-accent-red"></div>
-              <p className="text-lg md:text-xl lg:text-2xl font-display font-light leading-relaxed text-muted-foreground">
-                Based in Montreal
-              </p>
             </div>
           </div>
 
           {/* Right Side - Additional Info */}
           <div className="flex flex-col justify-end space-y-6">
             <p className="text-base md:text-lg text-foreground/70 leading-relaxed max-w-md">
-              Crafting elegant digital experiences through clean code and thoughtful design. 
-              Specialized in modern JavaScript frameworks with a passion for minimalist aesthetics.
+              Crafting elegant digital experiences through clean code and
+              thoughtful design. Specialized in modern JavaScript frameworks
+              with a passion for minimalist aesthetics.
             </p>
             <div className="flex items-center gap-4">
               <div className="w-2 h-2 bg-accent-red rounded-full animate-pulse"></div>

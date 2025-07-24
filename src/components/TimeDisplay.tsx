@@ -12,17 +12,19 @@ export function TimeDisplay() {
   }, []);
 
   const formatTime = (date: Date) => {
-    return date.toLocaleTimeString('en-US', {
-      hour12: true,
-      hour: '2-digit',
-      minute: '2-digit',
-      second: '2-digit'
-    }).toUpperCase();
+    return date
+      .toLocaleTimeString("en-US", {
+        hour12: true,
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+      })
+      .toUpperCase();
   };
 
   return (
     <span className="font-mono text-xs uppercase tracking-wider text-muted-foreground">
-      MONTREAL | {formatTime(time)}
+      NAGPUR | {formatTime(time)}
     </span>
   );
 }
